@@ -18,8 +18,8 @@ public class Wolf extends Character {
         // check the material
         // if the material is straw or wood
         // blows the house down -> changes the property in the house
-        if (Main.houses.get(houseIndex).getMaterial().getDurability() < 3) {
-            Main.houses.get(houseIndex).setBlownDown(true);
+        if (Story.houses.get(houseIndex).getMaterial().getDurability() < 3) {
+            Story.houses.get(houseIndex).setBlownDown(true);
             System.out.println("the house at " + houseIndex + " has been blown down");
         } else {
             System.out.println("the house at " + houseIndex + " cannot be blown down");
