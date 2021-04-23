@@ -18,9 +18,15 @@ public class Pig extends Character{
         String[] games = {"basketball", "board games", "piano", "in the pig sty", "soccer"};
         System.out.println(name + " is playing " + games[(int) (Math.random() * games.length)]);
     }
-    public void runningToNextHouse() {
+    public void runningToNextHouse(String runningPigs) {
         location++;
         String nextPigName = Story.houses.get(location).getBuilder();
-        System.out.println(name + " successfully made it to " + nextPigName + "'s house");
+        System.out.println(runningPigs + " successfully made it to " + nextPigName + "'s house");
+    }
+    public void response() {
+        System.out.println(name + " says: 'You will never blow down my " + Story.pigsHouses.get(this).getMaterial().getType() + " house!' ");
+    }
+    public void startFire() {
+        System.out.println(name + " starts a fire in the fireplace to scare the wolf away");
     }
 }

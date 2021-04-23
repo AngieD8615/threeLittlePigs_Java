@@ -1,11 +1,9 @@
 package com.company;
 public class House {
     private Material material;
-
     private boolean isBlownDown = false;
     private String builder;
     private boolean isComplete = false;
-
     public boolean isComplete() {
         return isComplete;
     }
@@ -15,7 +13,6 @@ public class House {
     public void setMaterial(Material material) {
         this.material = material;
     }
-
     public boolean getIsBlownDown() {
         return isBlownDown;
     }
